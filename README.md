@@ -135,13 +135,14 @@ follow instructions on torch.ch
 
 1. path:/home/han/seq2seq-attn/text-gen/exp2
 
-2. data: 
+2. data
 
 use entertainment news
 
-dropped sentences of length >20.
+dropped sentences of length >20
 
-3. set up:
+3. set up
+
 ```python
 python preprocess.py --srcfile text-gen/data2/src-train.txt --targetfile text-gen/data2/targ-train.txt --srcvalfile text-gen/data2/src-val.txt --targetvalfile text-gen/data2/targ-val.txt --outputfile text-gen/exp2/data/demo --batchsize 256 --seqlength 20
 th train.lua -data_file text-gen/exp2/data/demo-train.hdf5 -val_data_file text-gen/exp2/data/demo-val.hdf5 -savefile text-gen/exp2/demo-model -word_vec_size 500 -rnn_size 512 -epochs 20 -start_decay_at 11 -attn 0 -gpuid 1 -gpuid2 1 -print_every 1000 -num_layers 4 -dropout 0.2 ## text-gen/exp2/train.log
@@ -203,37 +204,37 @@ after diable nouveau driver and reboot the system, cannot enter into text mode.
 ##2016-11-28
 ###Strategies for paraphrasing:
 
-* Synonyms:
+1. Synonyms:
 
 Original: 65 is the traditional age for workers to retire in the U.S.
 
 Paraphrase: 65 is the traditional age for employees to retire in the U.S.
 
-* Condensation:
+2. Condensation:
 
 Original: 65 is the traditional age for workers to retire in the U.S.
 
 Paraphrase: 65 is the traditional retirement age in the U.S.
 
-* Circumlocution
+3. Circumlocution
 
 Original: 65 is the traditional age for worker to retire in the U.S.
 
 Paraphrase: 65 is the traditional age for workers to end their professional career in the U.S.
 
-* Phrase Reversal
+4. Phrase Reversal
 
 Original: 65 is the traditional age for workers to retire in the U.S.
 
 Paraphrase: In the U.S., the traditional age for workers to retire is 65.
 
-* Active-Passive Voice
+5. Active-Passive Voice
 
 Original: The company fired 15 workers.
 
 Paraphrase: 15 workers were fired by the company.
 
-* Alternate Word Form
+6. Alternate Word Form
 
 Original: A manager’s success is often due to perseverance.
 
@@ -273,7 +274,7 @@ when attn=0 use the hidden state of the last rnn unit as the context vector.
 (https://arxiv.org/pdf/1506.05869v3.pdf)
 
 ##2016-12-14
-* seven possible relations between phrases/sentences.
+###seven possible relations between phrases/sentences.
 
 (http://web.stanford.edu/class/cs224u/materials/cs224u-2016-bowman.pdf) slide:23
 
