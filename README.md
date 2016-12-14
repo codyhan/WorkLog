@@ -2,21 +2,15 @@
 ##2016-11-15
 * Read Torch tutorial
 
-(https://github.com/soumith/cvpr2015/blob/master/Deep%20Learning%20with%20Torch.ipynb)
+...(https://github.com/soumith/cvpr2015/blob/master/Deep%20Learning%20with%20Torch.ipynb)
 
-(https://github.com/soumith/cvpr2015/blob/master/Char-RNN.ipynb)
+...(https://github.com/soumith/cvpr2015/blob/master/Char-RNN.ipynb)
 
 * Read train.lua
 
-line 135: t[i]:zero()
-
-line 167: num_params = num_params + p:size(1) #return the first dimension of p
-
-line 170: layers[i]:apply(function (m) if m.nPruned then num_prunedparams=num_prunedparams+m:nPruned() end end)
-
 * Learn Lua in 15 minutes
 
-(http://tylerneylon.com/a/learn-lua/)
+...(http://tylerneylon.com/a/learn-lua/)
 ```lua
 num = 42  -- All numbers are doubles.
 
@@ -39,9 +33,9 @@ else
 
 * Install Cuda on the new Server:
 
-problem: fail to log into gui. /dev/nvidia*  has nothing.
+...problem: fail to log into gui. /dev/nvidia*  has nothing.
 
-solved by not install opengl
+...solved by not install opengl
 
 ##2016-11-16
 * Continue read torch tutorial
@@ -64,11 +58,11 @@ function get_rnn(input_size, rnn_size)
 end
 ```
 
-(https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/practicals/practical5.pdf)
+...(https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/practicals/practical5.pdf)
 
-(https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/practicals/practical6.pdf)
+...(https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/practicals/practical6.pdf)
 
-(https://github.com/oxford-cs-ml-2015/practical6)
+...(https://github.com/oxford-cs-ml-2015/practical6)
 
 ```lua
 --the model can be found at https://en.wikipedia.org/wiki/Long_short-term_memory
@@ -109,11 +103,11 @@ return LSTM
 
 3. 对话系统实验
 
-path:/home/han/Documents/text-gen/exp1
+...path:/home/han/Documents/text-gen/exp1
 
-result: ppl:46.69
+...result: ppl:46.69
 
-observation : many instances are translated into "我不知道"
+...observation : many instances are translated into "我不知道"
 
 * Install lua hdf5 for Dr.Gong
 ```shell
@@ -133,24 +127,24 @@ follow instructions on torch.ch
 
 * 对话系统实验 2:
 
-1. path:/home/han/seq2seq-attn/text-gen/exp2
+...path:/home/han/seq2seq-attn/text-gen/exp2
 
-2. data
+...data
 
-use entertainment news
+...use entertainment news
 
-dropped sentences of length >20
+...dropped sentences of length >20
 
-3. set up
+...set up
 
 ```python
 python preprocess.py --srcfile text-gen/data2/src-train.txt --targetfile text-gen/data2/targ-train.txt --srcvalfile text-gen/data2/src-val.txt --targetvalfile text-gen/data2/targ-val.txt --outputfile text-gen/exp2/data/demo --batchsize 256 --seqlength 20
 th train.lua -data_file text-gen/exp2/data/demo-train.hdf5 -val_data_file text-gen/exp2/data/demo-val.hdf5 -savefile text-gen/exp2/demo-model -word_vec_size 500 -rnn_size 512 -epochs 20 -start_decay_at 11 -attn 0 -gpuid 1 -gpuid2 1 -print_every 1000 -num_layers 4 -dropout 0.2 ## text-gen/exp2/train.log
-~experiment result:
-ppl:39.2
+#experiment result:
+#ppl:39.2
 ```
 
-4.Frequent translated sentences:
+Frequent translated sentences:
 ```
 我 觉 得 这 是 个 很 大 的 挑 战
 我 觉 得 这 是 个 很 好 的 事 情
@@ -174,7 +168,7 @@ ppl:39.2
 
 * installed my new desktop however failed 
 
-after diable nouveau driver and reboot the system, cannot enter into text mode.
+...after diable nouveau driver and reboot the system, cannot enter into text mode.
 
 ##2016-11-23
 * Neural Turing Machines:https://arxiv.org/pdf/1410.5401v2.pdf
@@ -199,53 +193,52 @@ after diable nouveau driver and reboot the system, cannot enter into text mode.
 
 * bleu:n-gram overlap between machine translation output and reference translation
 
-(http://www.statmt.org/book/slides/08-evaluation.pdf)
+...(http://www.statmt.org/book/slides/08-evaluation.pdf)
 
 ##2016-11-28
 ###Strategies for paraphrasing:
 
 1. Synonyms:
+...Original: 65 is the traditional age for workers to retire in the U.S.
 
-Original: 65 is the traditional age for workers to retire in the U.S.
-
-Paraphrase: 65 is the traditional age for employees to retire in the U.S.
+...Paraphrase: 65 is the traditional age for employees to retire in the U.S.
 
 2. Condensation:
 
-Original: 65 is the traditional age for workers to retire in the U.S.
+...Original: 65 is the traditional age for workers to retire in the U.S.
 
-Paraphrase: 65 is the traditional retirement age in the U.S.
+...Paraphrase: 65 is the traditional retirement age in the U.S.
 
 3. Circumlocution
 
-Original: 65 is the traditional age for worker to retire in the U.S.
+...Original: 65 is the traditional age for worker to retire in the U.S.
 
-Paraphrase: 65 is the traditional age for workers to end their professional career in the U.S.
+...Paraphrase: 65 is the traditional age for workers to end their professional career in the U.S.
 
 4. Phrase Reversal
 
-Original: 65 is the traditional age for workers to retire in the U.S.
+...Original: 65 is the traditional age for workers to retire in the U.S.
 
-Paraphrase: In the U.S., the traditional age for workers to retire is 65.
+...Paraphrase: In the U.S., the traditional age for workers to retire is 65.
 
 5. Active-Passive Voice
 
-Original: The company fired 15 workers.
+...Original: The company fired 15 workers.
 
-Paraphrase: 15 workers were fired by the company.
+...Paraphrase: 15 workers were fired by the company.
 
 6. Alternate Word Form
 
-Original: A manager’s success is often due to perseverance.
+...Original: A manager’s success is often due to perseverance.
 
-Paraphrase: A manager often succeeds because of perseverance. Managers’ success is often because they persevere.
+...Paraphrase: A manager often succeeds because of perseverance. Managers’ success is often because they persevere.
 
-(https://arxiv.org/pdf/cs/0112005v1.pdf)
+...(https://arxiv.org/pdf/cs/0112005v1.pdf)
 
 ##2016-12-01
 * read train.lua
 
-when attn=0 use the hidden state of the last rnn unit as the context vector.
+...when attn=0 use the hidden state of the last rnn unit as the context vector.
 
 ##2016-12-02
 * read Semantic Parsing via Paraphrasing
@@ -254,7 +247,7 @@ when attn=0 use the hidden state of the last rnn unit as the context vector.
 
 * read Tagger: Deep Unsupervised Perceptual Grouping
 
-(https://arxiv.org/pdf/1606.06724v2.pdf)
+...(https://arxiv.org/pdf/1606.06724v2.pdf)
 
 * read GAN tutorial
 
@@ -263,15 +256,15 @@ when attn=0 use the hidden state of the last rnn unit as the context vector.
 ##2016-12-13
 * read Generating Sentences From a Continuous Space
 
-(https://arxiv.org/pdf/1511.06349v2.pdf)
+...(https://arxiv.org/pdf/1511.06349v2.pdf)
 
 * read Reasoning With Neural Tensor Networks for Knowledge Base Completion
 
-(https://papers.nips.cc/paper/5028-reasoning-with-neural-tensor-networks-for-knowledge-base-completion.pdf#cite.Graupmann)
+...(https://papers.nips.cc/paper/5028-reasoning-with-neural-tensor-networks-for-knowledge-base-completion.pdf#cite.Graupmann)
 
 * read A Neural Conversational Model
 
-(https://arxiv.org/pdf/1506.05869v3.pdf)
+...(https://arxiv.org/pdf/1506.05869v3.pdf)
 
 ##2016-12-14
 ###seven possible relations between phrases/sentences.
@@ -294,16 +287,16 @@ when attn=0 use the hidden state of the last rnn unit as the context vector.
 
 * read Generating Natural Language Inference Chains
 
-(https://arxiv.org/pdf/1606.01404v1.pdf)
+...(https://arxiv.org/pdf/1606.01404v1.pdf)
 
 * read Paraphrase-Driven Learning for Open Question Answering
 
-(http://knowitall.cs.washington.edu/paralex/acl2013-paralex.pdf)
+...(http://knowitall.cs.washington.edu/paralex/acl2013-paralex.pdf)
 
 * read A Roadmap towards Machine Intelligence
 
-(https://arxiv.org/abs/1511.08130)
+...(https://arxiv.org/abs/1511.08130)
 
 * read SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient
 
-(https://arxiv.org/pdf/1609.05473v5.pdf)
+...(https://arxiv.org/pdf/1609.05473v5.pdf)
