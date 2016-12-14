@@ -197,7 +197,9 @@ Frequent translated sentences:
 ##2016-11-28
 ###Strategies for paraphrasing:
 (https://arxiv.org/pdf/cs/0112005v1.pdf)
+
 1. Synonyms:
+
    Original: 65 is the traditional age for workers to retire in the U.S.
 
    Paraphrase: 65 is the traditional age for employees to retire in the U.S.
@@ -281,3 +283,5 @@ Frequent translated sentences:
 * read [A Roadmap towards Machine Intelligence](https://arxiv.org/abs/1511.08130)
 
 * read [SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient](https://arxiv.org/pdf/1609.05473v5.pdf)
+
+##2016-12-15
