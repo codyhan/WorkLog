@@ -143,15 +143,6 @@ th train.lua -data_file text-gen/exp2/data/demo-train.hdf5 -val_data_file text-g
 #ppl:39.2
 ```
 
-Frequent translated sentences:
-```
-我 觉 得 这 是 个 很 大 的 挑 战
-我 觉 得 这 是 个 很 好 的 事 情
-在 这 个 时 候
-我 们 也 没 想 到
-不 知 道 自 己 是 否 会 发 生 什 么
-有 网 友 表 示
-```
 ##2016-11-18
 (https://github.com/torch/torch7/wiki/Cheatsheet)
 
@@ -179,7 +170,9 @@ Frequent translated sentences:
 * understand multi-attn
 
 ##2016-11-24
-###word error rate:minimum number of editing steps to transform output to reference.
+###Word error rate
+minimum number of editing steps to transform output to reference.
+
 * match: words match, no cost
 
 * substitution: replace one word with another
@@ -258,7 +251,7 @@ Frequent translated sentences:
 * read [A Neural Conversational Model](https://arxiv.org/pdf/1506.05869v3.pdf)
 
 ##2016-12-14
-###seven possible relations between phrases/sentences.
+###Seven possible relations between phrases/sentences.
 
 (http://web.stanford.edu/class/cs224u/materials/cs224u-2016-bowman.pdf) slide:23
 
@@ -275,6 +268,8 @@ Frequent translated sentences:
 6. cover
 
 7. independence
+
+###Readings
 
 * read [Generating Natural Language Inference Chains](https://arxiv.org/pdf/1606.01404v1.pdf)
 
