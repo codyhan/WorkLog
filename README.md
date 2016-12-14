@@ -2,11 +2,15 @@ worklog
 ##2016-11-15
 *Read Torch tutorial
 (https://github.com/soumith/cvpr2015/blob/master/Deep%20Learning%20with%20Torch.ipynb)
+
 (https://github.com/soumith/cvpr2015/blob/master/Char-RNN.ipynb)
 *Read train.lua
 line 135: t[i]:zero()
+
 line 167: num_params = num_params + p:size(1) #return the first dimension of p
+
 line 170: layers[i]:apply(function (m) if m.nPruned then num_prunedparams=num_prunedparams+m:nPruned() end end)
+
 *Learn Lua in 15 minutes
 (http://tylerneylon.com/a/learn-lua/)
 ```lua
@@ -53,7 +57,9 @@ function get_rnn(input_size, rnn_size)
 end
 ```
 (https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/practicals/practical5.pdf)
+
 (https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/practicals/practical6.pdf)
+
 (https://github.com/oxford-cs-ml-2015/practical6)
 ```
 --torch
@@ -89,11 +95,14 @@ return LSTM
 
 *Prepare data for news generator task
 1.description:this task uses news text to produce train data. The source sentences are cleaned sentences from news documents and the target sentences are the next sentence after the source sentence.
-(/home/lab/seq2seq-attn/text-gen
+
 2.delete sentences of length <5 or >25
+
 3.对话系统实验 1:
 path:/home/han/Documents/text-gen/exp1
+
 result: ppl:46.69
+
 observation : many instances are translated into "我不知道"
 
 *Install lua hdf5 for Dr.Gong
@@ -107,13 +116,16 @@ sudo pip install h5py
 follow instructions on torch.ch
 ###Learn torch
 (https://github.com/torch/nn/blob/master/doc/table.md)
+
 (https://github.com/torch/torch7/blob/master/doc/tensor.md)
+
 (https://github.com/torch/torch7/blob/master/doc/maths.md)
 
 *对话系统实验 2:
 1.path:/home/han/seq2seq-attn/text-gen/exp2
 2.data: 
 use entertainment news
+
 dropped sentences of length >20.
 3.set up:
 ```
@@ -123,15 +135,17 @@ th train.lua -data_file text-gen/exp2/data/demo-train.hdf5 -val_data_file text-g
 ppl:39.2
 ```
 4.Frequent translated sentences:
+```
 我 觉 得 这 是 个 很 大 的 挑 战
 我 觉 得 这 是 个 很 好 的 事 情
 在 这 个 时 候
 我 们 也 没 想 到
 不 知 道 自 己 是 否 会 发 生 什 么
 有 网 友 表 示
-
+```
 ##2016-11-18
 (https://github.com/torch/torch7/wiki/Cheatsheet)
+
 (http://hunch.net/~nyoml/torch7.pdf)
 
 ##2016-11-21
@@ -163,22 +177,34 @@ after diable nouveau driver and reboot the system, cannot enter into text mode.
 ###Strategies for paraphrasing:
 *Synonyms:
 Original: 65 is the traditional age for workers to retire in the U.S.
+
 Paraphrase: 65 is the traditional age for employees to retire in the U.S.
+
 *Condensation:
 Original: 65 is the traditional age for workers to retire in the U.S.
+
 Paraphrase: 65 is the traditional retirement age in the U.S.
+
 *Circumlocution
 Original: 65 is the traditional age for worker to retire in the U.S.
+
 Paraphrase: 65 is the traditional age for workers to end their professional career in the U.S.
+
 *Phrase Reversal
 Original: 65 is the traditional age for workers to retire in the U.S.
+
 Paraphrase: In the U.S., the traditional age for workers to retire is 65.
+
 *Active-Passive Voice
 Original: The company fired 15 workers.
+
 Paraphrase: 15 workers were fired by the company.
+
 *Alternate Word Form
 Original: A manager’s success is often due to perseverance.
+
 Paraphrase: A manager often succeeds because of perseverance. Managers’ success is often because they persevere.
+
 (https://arxiv.org/pdf/cs/0112005v1.pdf)
 ##2016-12-01
 *read train.lua
