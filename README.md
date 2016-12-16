@@ -279,4 +279,8 @@ minimum number of editing steps to transform output to reference.
 
 * read [SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient](https://arxiv.org/pdf/1609.05473v5.pdf)
 
-##2016-12-15
+##2016-12-16
+* read [Data Generation as Sequential Decision Making](https://arxiv.org/pdf/1506.03504v3.pdf)
+* read [Generating Chinese Classical Poems with RNN](https://arxiv.org/pdf/1604.01537.pdf)
+* read [Tracking The World State With Recurrent Entity Networks](https://arxiv.org/pdf/1612.03969v1.pdf)
+
