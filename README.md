@@ -284,3 +284,5 @@ minimum number of editing steps to transform output to reference.
 * read [Generating Chinese Classical Poems with RNN](https://arxiv.org/pdf/1604.01537.pdf)
 * read [Tracking The World State With Recurrent Entity Networks](https://arxiv.org/pdf/1612.03969v1.pdf)
 
+##2016-12-19
+* read [Learning Distributed Word Representations for Natural Logic Reasoning](http://www.aaai.org/ocs/index.php/SSS/SSS15/paper/view/10221/10027)
