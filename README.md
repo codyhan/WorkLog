@@ -297,3 +297,10 @@ minimum number of editing steps to transform output to reference.
 ##2016-12-21
 * read [DIRT – Discovery of Inference Rules from Text](https://pdfs.semanticscholar.org/511c/439c59f9bbfeb3be135d85ee75bef5594ad2.pdf)
 
+Ideas: words that tend to occur in the same contexts tend  to  have  similar  meanings.
+
+* read [Character-Aware Neural Language Models](https://arxiv.org/pdf/1508.06615v4.pdf)
+
+Ideas: each filter of the CharCNN is essentially learning to detect particular character n-grams.
+
+
