@@ -294,7 +294,7 @@ minimum number of editing steps to transform output to reference.
 
 * read [Monolingual Machine Translation for Paraphrase Generation](https://www.microsoft.com/en-us/research/publication/monolingual-machine-translation-for-paraphrase-generation/)
 
-##2016-12-21
+##2016-12-22
 * read [DIRT – Discovery of Inference Rules from Text](https://pdfs.semanticscholar.org/511c/439c59f9bbfeb3be135d85ee75bef5594ad2.pdf)
 
 Ideas: words that tend to occur in the same contexts tend  to  have  similar  meanings.
@@ -303,4 +303,10 @@ Ideas: words that tend to occur in the same contexts tend  to  have  similar  me
 
 Ideas: each filter of the CharCNN is essentially learning to detect particular character n-grams.
 
+##2016-12-23
+* read [Dual Learning for Machine Translation](https://arxiv.org/pdf/1611.00179.pdf)
 
+* read [中文信息处理发展报告](http://cips-upload.bj.bcebos.com/cips2016.pdf)
+
+* read [Connectionist Temporal Classification: Labelling Unsegmented
+Sequence Data with Recurrent Neural Networks](http://www.cs.toronto.edu/%7Egraves/icml_2006.pdf)
