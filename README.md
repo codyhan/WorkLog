@@ -310,3 +310,13 @@ Ideas: each filter of the CharCNN is essentially learning to detect particular c
 
 * read [Connectionist Temporal Classification: Labelling Unsegmented
 Sequence Data with Recurrent Neural Networks](http://www.cs.toronto.edu/%7Egraves/icml_2006.pdf)
+
+##2016-12-26
+#繁简转换
+opencc -i wiki.zh.text -o wiki.zh.text.jian -c zht2zhs.ini
+
+##2016-12-27
+* read [Phased LSTM: Accelerating Recurrent Network Training for Long or Event-based Sequences](https://arxiv.org/pdf/1610.09513v1.pdf)
+
+* read [Chinese sentence segmentation as comma classification](http://www.aclweb.org/anthology/P11-2111)
+The punctuation comma in Chinese sometimes functions as a period causing the diffuculty of segmenting sentences in a paragraph.
