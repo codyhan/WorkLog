@@ -320,3 +320,7 @@ opencc -i wiki.zh.text -o wiki.zh.text.jian -c zht2zhs.ini
 
 * read [Chinese sentence segmentation as comma classification](http://www.aclweb.org/anthology/P11-2111)
 The punctuation comma in Chinese sometimes functions as a period causing the diffuculty of segmenting sentences in a paragraph.
+
+##2016-12-30
+* read [Data Programming:Creating Large Training Sets, Quickly](https://arxiv.org/pdf/1605.07723v2.pdf)
+
