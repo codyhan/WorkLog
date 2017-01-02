@@ -324,3 +324,12 @@ The punctuation comma in Chinese sometimes functions as a period causing the dif
 ##2016-12-30
 * read [Data Programming:Creating Large Training Sets, Quickly](https://arxiv.org/pdf/1605.07723v2.pdf)
 
+* read [Sentence Boundary Detection for Social Media Text](http://amitavadas.com/Pub/SBD_ICON_2015.pdf)
+
+##2016-01-02
+* read [text segmentation](https://en.wikipedia.org/wiki/Text_segmentation)
+
+* read [Elephant:Sequence Labelling for Word and Sentence Segmentation](http://www.aclweb.org/anthology/D13-1146)
+
+IOB tokenization
+Label tokens of a sentence.
