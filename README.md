@@ -357,3 +357,28 @@ ruby -v
 #optional:
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 ```
+
+##2016-01-05
+
+* read [Semantic Parsing: The Task, the State-of-the-Art and the Future](http://www.aclweb.org/anthology/P10-5006)
+
+* read [Unsupervised Semantic Parsing](http://research.microsoft.com/en-us/um/people/hoifung/papers/poon09.pdf)
+
+##2016-01-06
+
+* read [The Ubuntu Dialogue Corpus: A Large Dataset for Research in
+Unstructured Multi-Turn Dialogue Systems](https://arxiv.org/pdf/1506.08909v3.pdf)
+
+Retrieve-based chatbot. Use dual encoders to predict whether a context and a response is a match.
+
+##2016-01-09
+
+* read [Show and Tell](https://arxiv.org/pdf/1609.06647v1.pdf)
+
+* read [Deep Visual-Semantic Alignments for Generating Image Descriptions](http://cs.stanford.edu/people/karpathy/cvpr2015.pdf)
+
+##2016-01-10
+
+* find a repo which is able to convert pdf into html (https://github.com/coolwanglu/pdf2htmlEX)
+
+magic installation:(https://gist.github.com/rajeevkannav/d07f822e209a22d07176)
