@@ -351,8 +351,8 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
 exec $SHELL
 
-rbenv install 2.3.1
-rbenv global 2.3.1
+rbenv install 2.3.3
+rbenv global 2.3.3
 ruby -v
 #optional:
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
@@ -382,3 +382,24 @@ Retrieve-based chatbot. Use dual encoders to predict whether a context and a res
 * find a repo which is able to convert pdf into html (https://github.com/coolwanglu/pdf2htmlEX)
 
 magic installation:(https://gist.github.com/rajeevkannav/d07f822e209a22d07176)
+
+###Install Docker
+
+(https://docs.docker.com/engine/installation/linux/ubuntulinux/)
+
+```
+sudo apt-get update
+sudo apt-get install apt-transport-https ca-certificates
+sudo apt-key adv \
+               --keyserver hkp://ha.pool.sks-keyservers.net:80 \
+               --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" | sudo tee /etc/apt/sources.list.d/docker.list
+sudo apt-get update
+sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
+sudo apt-get update
+sudo apt-get install docker-engine
+sudo service docker start
+sudo docker run hello-world
+```
+
+
