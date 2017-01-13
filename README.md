@@ -165,37 +165,37 @@ minimum number of editing steps to transform output to reference.
 ####Strategies for paraphrasing:
 (https://arxiv.org/pdf/cs/0112005v1.pdf)
 
-1. Synonyms:
+1.Synonyms:
 
    Original: 65 is the traditional age for workers to retire in the U.S.
 
    Paraphrase: 65 is the traditional age for employees to retire in the U.S.
 
-2. Condensation:
+2.Condensation:
 
    Original: 65 is the traditional age for workers to retire in the U.S.
 
    Paraphrase: 65 is the traditional retirement age in the U.S.
 
-3. Circumlocution
+3.Circumlocution
 
    Original: 65 is the traditional age for worker to retire in the U.S.
 
    Paraphrase: 65 is the traditional age for workers to end their professional career in the U.S.
 
-4. Phrase Reversal
+4.Phrase Reversal
 
    Original: 65 is the traditional age for workers to retire in the U.S.
 
    Paraphrase: In the U.S., the traditional age for workers to retire is 65.
 
-5. Active-Passive Voice
+5.Active-Passive Voice
 
    Original: The company fired 15 workers.
 
    Paraphrase: 15 workers were fired by the company.
 
-6. Alternate Word Form
+6.Alternate Word Form
 
    Original: A manager’s success is often due to perseverance.
 
@@ -286,7 +286,7 @@ Ideas: each filter of the CharCNN is essentially learning to detect particular c
 Sequence Data with Recurrent Neural Networks](http://www.cs.toronto.edu/%7Egraves/icml_2006.pdf)
 ---
 ##2016-12-26
-#繁简转换
+####繁简转换
 opencc -i wiki.zh.text -o wiki.zh.text.jian -c zht2zhs.ini
 ---
 ##2016-12-27
@@ -357,7 +357,7 @@ Retrieve-based chatbot. Use dual encoders to predict whether a context and a res
 
 magic installation:(https://gist.github.com/rajeevkannav/d07f822e209a22d07176)
 
-###Install Docker
+####Install Docker
 
 (https://docs.docker.com/engine/installation/linux/ubuntulinux/)
 
