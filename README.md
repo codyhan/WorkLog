@@ -358,26 +358,26 @@ ruby -v
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 ```
 
-##2016-01-05
+##2017-01-05
 
 * read [Semantic Parsing: The Task, the State-of-the-Art and the Future](http://www.aclweb.org/anthology/P10-5006)
 
 * read [Unsupervised Semantic Parsing](http://research.microsoft.com/en-us/um/people/hoifung/papers/poon09.pdf)
 
-##2016-01-06
+##2017-01-06
 
 * read [The Ubuntu Dialogue Corpus: A Large Dataset for Research in
 Unstructured Multi-Turn Dialogue Systems](https://arxiv.org/pdf/1506.08909v3.pdf)
 
 Retrieve-based chatbot. Use dual encoders to predict whether a context and a response is a match.
 
-##2016-01-09
+##2017-01-09
 
 * read [Show and Tell](https://arxiv.org/pdf/1609.06647v1.pdf)
 
 * read [Deep Visual-Semantic Alignments for Generating Image Descriptions](http://cs.stanford.edu/people/karpathy/cvpr2015.pdf)
 
-##2016-01-10
+##2017-01-10
 
 * find a repo which is able to convert pdf into html (https://github.com/coolwanglu/pdf2htmlEX)
 
@@ -402,4 +402,30 @@ sudo service docker start
 sudo docker run hello-world
 ```
 
+##2017-01-13
+####install tomcat
+```
+tar -zxvf apache-tomcat-7.0.73.tar.gz
+sudo mv apache-tomcat-7.0.73 /opt/
+cd /opt/apache-tomcat-7.0.73/bin/
 
+sudo gedit setclasspath.sh
+//add the following text to setclasspath.sh in the beginning
+//export CATALINA_HOME=/opt/apache-tomcat-7.0.73
+//export JAVA_HOME=/usr/local/java/jdk1.7.0_80
+
+sudo ./startup.sh
+//Using CATALINA_BASE:   /opt/apache-tomcat-7.0.73
+//Using CATALINA_HOME:   /opt/apache-tomcat-7.0.73
+//Using CATALINA_TMPDIR: /opt/apache-tomcat-7.0.73/temp
+//Using JRE_HOME:        /usr/lib/jdk/jdk1.7.0_80
+//Using CLASSPATH:       /opt/apache-tomcat-//7.0.73/bin/bootstrap.jar:/opt/apache-tomcat-7.0.73/bin/tomcat-juli.jar
+//Tomcat started.
+
+sudo ./shutdown.sh
+//Using CATALINA_BASE:   /opt/apache-tomcat-7.0.73
+//Using CATALINA_HOME:   /opt/apache-tomcat-7.0.73
+//Using CATALINA_TMPDIR: /opt/apache-tomcat-7.0.73/temp
+//Using JRE_HOME:        /usr/lib/jdk/jdk1.7.0_80
+//Using CLASSPATH:       /opt/apache-tomcat-//7.0.73/bin/bootstrap.jar:/opt/apache-tomcat-7.0.73/bin/tomcat-juli.jar
+```
