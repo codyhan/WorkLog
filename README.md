@@ -9,6 +9,7 @@
 #### Read train.lua
 
 #### Learn Lua in 15 minutes
+
    (http://tylerneylon.com/a/learn-lua/)
 ```lua
 num = 42  -- All numbers are doubles.
@@ -99,7 +100,7 @@ return LSTM
 1.description:this task uses news text to produce train data. The source sentences are cleaned sentences from news documents and the target sentences are the next sentence after the source sentence.
 
 2.delete sentences of length <5 or >25
-#### Install lua hdf5 for Dr.Gong
+#### Install lua hdf5
 ```
 sudo pip install cython
 sudo apt-get install libhdf5-dev
@@ -108,8 +109,10 @@ sudo pip install h5py
 ---
 ##2016-11-17
 ####Install torch on Telsa server
+
 follow instructions on torch.ch
 ####Learn torch
+
 (https://github.com/torch/nn/blob/master/doc/table.md)
 
 (https://github.com/torch/torch7/blob/master/doc/tensor.md)
@@ -118,6 +121,7 @@ follow instructions on torch.ch
 
 ---
 ##2016-11-18
+
 (https://github.com/torch/torch7/wiki/Cheatsheet)
 
 (http://hunch.net/~nyoml/torch7.pdf)
@@ -145,6 +149,7 @@ follow instructions on torch.ch
 ---
 ##2016-11-24
 ####Word error rate
+
 minimum number of editing steps to transform output to reference.
 
 1. match: words match, no cost
@@ -282,17 +287,18 @@ Ideas: each filter of the CharCNN is essentially learning to detect particular c
 
 #### read [中文信息处理发展报告](http://cips-upload.bj.bcebos.com/cips2016.pdf)
 
-#### read [Connectionist Temporal Classification: Labelling Unsegmented
-Sequence Data with Recurrent Neural Networks](http://www.cs.toronto.edu/%7Egraves/icml_2006.pdf)
+#### read [Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks](http://www.cs.toronto.edu/%7Egraves/icml_2006.pdf)
 ---
 ##2016-12-26
 ####繁简转换
+
 opencc -i wiki.zh.text -o wiki.zh.text.jian -c zht2zhs.ini
 ---
 ##2016-12-27
 #### read [Phased LSTM: Accelerating Recurrent Network Training for Long or Event-based Sequences](https://arxiv.org/pdf/1610.09513v1.pdf)
 
 #### read [Chinese sentence segmentation as comma classification](http://www.aclweb.org/anthology/P11-2111)
+
 The punctuation comma in Chinese sometimes functions as a period causing the diffuculty of segmenting sentences in a paragraph.
 ---
 ##2016-12-30
@@ -340,8 +346,7 @@ echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 ---
 ##2017-01-06
 
-#### read [The Ubuntu Dialogue Corpus: A Large Dataset for Research in
-Unstructured Multi-Turn Dialogue Systems](https://arxiv.org/pdf/1506.08909v3.pdf)
+#### read [The Ubuntu Dialogue Corpus: A Large Dataset for Research in Unstructured Multi-Turn Dialogue Systems](https://arxiv.org/pdf/1506.08909v3.pdf)
 
 Retrieve-based chatbot. Use dual encoders to predict whether a context and a response is a match.
 ---
