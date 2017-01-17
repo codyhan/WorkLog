@@ -36,6 +36,7 @@ else
    problem: fail to log into gui. /dev/nvidia####  has nothing.
 
    solved by not install opengl
+
 ---
 ##2016-11-16
 #### Continue read torch tutorial
@@ -125,12 +126,14 @@ follow instructions on torch.ch
 (https://github.com/torch/torch7/wiki/Cheatsheet)
 
 (http://hunch.net/~nyoml/torch7.pdf)
+
 ---
 ##2016-11-21
 #### write lab report
 
 #### conduct experiments to tune parameters.
 ---
+
 ##2016-11-22
 (http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/)
 
@@ -165,6 +168,7 @@ minimum number of editing steps to transform output to reference.
 6. bleu:n-gram overlap between machine translation output and reference translation
 
    (http://www.statmt.org/book/slides/08-evaluation.pdf)
+
 ---
 ##2016-11-28
 ####Strategies for paraphrasing:
@@ -264,14 +268,17 @@ minimum number of editing steps to transform output to reference.
 #### read [Generating Chinese Classical Poems with RNN](https://arxiv.org/pdf/1604.01537.pdf)
 
 #### read [Tracking The World State With Recurrent Entity Networks](https://arxiv.org/pdf/1612.03969v1.pdf)
+
 ---
 ##2016-12-19
 #### read [Learning Distributed Word Representations for Natural Logic Reasoning](http://www.aaai.org/ocs/index.php/SSS/SSS15/paper/view/10221/10027)
+
 ---
 ##2016-12-20
 #### read [A Neural Attention Model for Abstractive Summarization](https://arxiv.org/pdf/1509.00685v2.pdf)
 
 #### read [Monolingual Machine Translation for Paraphrase Generation](https://www.microsoft.com/en-us/research/publication/monolingual-machine-translation-for-paraphrase-generation/)
+
 ---
 ##2016-12-22
 #### read [DIRT – Discovery of Inference Rules from Text](https://pdfs.semanticscholar.org/511c/439c59f9bbfeb3be135d85ee75bef5594ad2.pdf)
@@ -281,6 +288,7 @@ Ideas: words that tend to occur in the same contexts tend  to  have  similar  me
 #### read [Character-Aware Neural Language Models](https://arxiv.org/pdf/1508.06615v4.pdf)
 
 Ideas: each filter of the CharCNN is essentially learning to detect particular character n-grams.
+
 ---
 ##2016-12-23
 #### read [Dual Learning for Machine Translation](https://arxiv.org/pdf/1611.00179.pdf)
@@ -288,11 +296,13 @@ Ideas: each filter of the CharCNN is essentially learning to detect particular c
 #### read [中文信息处理发展报告](http://cips-upload.bj.bcebos.com/cips2016.pdf)
 
 #### read [Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks](http://www.cs.toronto.edu/%7Egraves/icml_2006.pdf)
+
 ---
 ##2016-12-26
 ####繁简转换
 
 opencc -i wiki.zh.text -o wiki.zh.text.jian -c zht2zhs.ini
+
 ---
 ##2016-12-27
 #### read [Phased LSTM: Accelerating Recurrent Network Training for Long or Event-based Sequences](https://arxiv.org/pdf/1610.09513v1.pdf)
@@ -300,11 +310,13 @@ opencc -i wiki.zh.text -o wiki.zh.text.jian -c zht2zhs.ini
 #### read [Chinese sentence segmentation as comma classification](http://www.aclweb.org/anthology/P11-2111)
 
 The punctuation comma in Chinese sometimes functions as a period causing the diffuculty of segmenting sentences in a paragraph.
+
 ---
 ##2016-12-30
 #### read [Data Programming:Creating Large Training Sets, Quickly](https://arxiv.org/pdf/1605.07723v2.pdf)
 
 #### read [Sentence Boundary Detection for Social Media Text](http://amitavadas.com/Pub/SBD_ICON_2015.pdf)
+
 ---
 ##2016-01-02
 #### read [text segmentation](https://en.wikipedia.org/wiki/Text_segmentation)
@@ -337,24 +349,28 @@ ruby -v
 #optional:
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 ```
+
 ---
 ##2017-01-05
 
 #### read [Semantic Parsing: The Task, the State-of-the-Art and the Future](http://www.aclweb.org/anthology/P10-5006)
 
 #### read [Unsupervised Semantic Parsing](http://research.microsoft.com/en-us/um/people/hoifung/papers/poon09.pdf)
+
 ---
 ##2017-01-06
 
 #### read [The Ubuntu Dialogue Corpus: A Large Dataset for Research in Unstructured Multi-Turn Dialogue Systems](https://arxiv.org/pdf/1506.08909v3.pdf)
 
 Retrieve-based chatbot. Use dual encoders to predict whether a context and a response is a match.
+
 ---
 ##2017-01-09
 
 #### read [Show and Tell](https://arxiv.org/pdf/1609.06647v1.pdf)
 
 #### read [Deep Visual-Semantic Alignments for Generating Image Descriptions](http://cs.stanford.edu/people/karpathy/cvpr2015.pdf)
+
 ---
 ##2017-01-10
 
@@ -380,6 +396,7 @@ sudo apt-get install docker-engine
 sudo service docker start
 sudo docker run hello-world
 ```
+
 ---
 ##2017-01-13
 ####install tomcat
@@ -408,6 +425,7 @@ sudo ./shutdown.sh
 //Using JRE_HOME:        /usr/lib/jdk/jdk1.7.0_80
 //Using CLASSPATH:       /opt/apache-tomcat-//7.0.73/bin/bootstrap.jar:/opt/apache-tomcat-7.0.73/bin/tomcat-juli.jar
 ```
+
 ---
 ##2017-01-16
 ####install opencv
