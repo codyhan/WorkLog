@@ -140,6 +140,7 @@ follow instructions on torch.ch
 #### installed my new desktop however failed 
 
    after diable nouveau driver and reboot the system, cannot enter into text mode.
+
 ---
 ##2016-11-23
 #### Neural Turing Machines:https://arxiv.org/pdf/1410.5401v2.pdf
