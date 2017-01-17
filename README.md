@@ -403,3 +403,39 @@ sudo ./shutdown.sh
 //Using JRE_HOME:        /usr/lib/jdk/jdk1.7.0_80
 //Using CLASSPATH:       /opt/apache-tomcat-//7.0.73/bin/bootstrap.jar:/opt/apache-tomcat-7.0.73/bin/tomcat-juli.jar
 ```
+---
+##2017-01-16
+####install opencv
+```
+sudo apt-get install build-essential  
+sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+
+cd opencv-2.4.11
+mkdir release
+cd release
+#compile without cuda support
+cmake -D BUILD_opencv_gpu=OFF -D WITH_CUDA=OFF -D WITH_1394=OFF -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
+make -j8
+sudo make install
+sudo /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'  
+sudo ldconfig 
+
+sudo apt-get install ant
+sudo apt-get install openjdk-7-jdk
+#export JAVA_HOME=/usr/lib/jvm/java-6-oracle
+cmake -DBUILD_SHARED_LIBS=OFF ..
+make -j8
+sudo make install
+```
+
+---
+##2017-01-17
+####Configure opencv library path in IDEA:
+1. open "file/project structure/dependencies", add opencv jar.
+
+2. open "file/project structure/libraries/+/java", add opencv jar.
+
+3. in vm option, write: -Djava.library.path=/your_opencv_path/release/lib
+
+
