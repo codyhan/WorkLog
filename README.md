@@ -462,4 +462,24 @@ sudo make install
 
 3. in vm option, write: -Djava.library.path=/your_opencv_path/release/lib
 
+##2017-01-22
+####Install CUDA-8.0 on ubuntu14.04 with kernel:4.2.0-27-generic
+```
+sudo apt-get update
+sudo apt-get install nvidia-367
+sudo apt-get install mesa-common-dev
+sudo apt-get install freeglut3-dev
+sudo reboot
 
+sudo apt-get install g++
+sudo service lightdm stop
+#don't install driver in the next step!!!
+sudo sh cuda_8.0.44_linux.run
+sudo reboot
+
+sudo gedit /etc/profile
+source /etc/profile
+
+uname -r
+nvcc -V
+```
