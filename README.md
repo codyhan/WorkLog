@@ -101,7 +101,7 @@ return LSTM
 1.description:this task uses news text to produce train data. The source sentences are cleaned sentences from news documents and the target sentences are the next sentence after the source sentence.
 
 2.delete sentences of length <5 or >25
-#### Install lua hdf5
+#### Install python hdf5
 ```
 sudo pip install cython
 sudo apt-get install libhdf5-dev
@@ -429,24 +429,28 @@ sudo ./shutdown.sh
 
 ---
 ##2017-01-16
-####install opencv
+####install opencv2.4.11 for nvidia gtx series card with cuda 8.0
+Useful blog(http://blog.csdn.net/xuzhongxiong/article/details/52717285)
 ```
 sudo apt-get install build-essential  
 sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
 sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
 
+
 cd opencv-2.4.11
-mkdir release
-cd release
-#compile without cuda support
-cmake -D BUILD_opencv_gpu=OFF -D WITH_CUDA=OFF -D WITH_1394=OFF -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
+gedit modules/gpu/src/graphcuts.cpp
+replace line 45 with "#if !defined (HAVE_CUDA) || defined (CUDA_DISABLER) || (CUDART_VERSION>=8000)"
+mkdir build
+cd build
+
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D CUDA_GENERATION=Kepler ..
 make -j8
 sudo make install
-sudo /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'  
-sudo ldconfig 
+#sudo /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'  
+#sudo ldconfig 
 
 sudo apt-get install ant
-sudo apt-get install openjdk-7-jdk
 #export JAVA_HOME=/usr/lib/jvm/java-6-oracle
 cmake -DBUILD_SHARED_LIBS=OFF ..
 make -j8
@@ -482,4 +486,19 @@ source /etc/profile
 
 uname -r
 nvcc -V
+```
+
+##2017-01-23
+####Install cuDNN5.1
+```
+tar xvzf cudnn-8.0-linux-x64-v5.1-ga.tgz
+sudo cp -P cuda/include/cudnn.h /usr/local/cuda-8.0/include
+sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-8.0/lib64
+sudo chmod a+r /usr/local/cuda-8.0/include/cudnn.h /usr/local/cuda-8.0/lib64/libcudnn*
+```
+####Install tensorflow with gpu support for python 2.7
+```
+sudo apt-get install python-pip python-dev
+export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp27-none-linux_x86_64.whl
+sudo pip install --upgrade $TF_BINARY_URL
 ```
