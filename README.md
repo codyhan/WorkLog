@@ -502,3 +502,18 @@ sudo apt-get install python-pip python-dev
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp27-none-linux_x86_64.whl
 sudo pip install --upgrade $TF_BINARY_URL
 ```
+####Configure Shiny Server
+```
+sudo gedit /etc/shiny-server/shiny-server.conf
+change "run_as shiny" to "run_as username"
+sudo ufw allow 3838/tcp
+```
+---
+##2017-01-24
+####Deploy web application enviroment with Gradle and Idea
+
+1. Follow instructions (https://my.oschina.net/u/1010578/blog/390094)
+
+2. Set artifact (http://blog.csdn.net/petershusheng/article/details/52382216)
+
+3. Add jsp-api.jar and servlet-api.jar
