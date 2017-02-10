@@ -531,12 +531,12 @@ What kind of questions should be answered by a  domain specific QA system?
 ---
 ##2017-02-09
 ####Read [A Rule-based Question Answering System for Reading Comprehension Tests](https://www.cs.utah.edu/~riloff/pdfs/quarc.pdf)
-####Read[Stanford QA slides](https://www.fosteropenscience.eu/sites/default/files/pdf/2930.pdf)
-####Read[Stanford chatbot slides](https://web.stanford.edu/class/cs124/lec/chatbot.pdf)
+####Read [Stanford QA slides](https://www.fosteropenscience.eu/sites/default/files/pdf/2930.pdf)
+####Read [Stanford chatbot slides](https://web.stanford.edu/class/cs124/lec/chatbot.pdf)
 ---
 ##2017-02-10
 ####Read [StalemateBreaker: A Proactive Content-Introducing Approach to Automatic Human-Computer Conversation](https://arxiv.org/pdf/1604.04358.pdf)
 
-####Read [Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models](https://arxiv.org/pdf/1604.04358.pdf)
+####Read [Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models](https://arxiv.org/pdf/1507.04808.pdf)
 
  
