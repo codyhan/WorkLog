@@ -510,10 +510,33 @@ sudo ufw allow 3838/tcp
 ```
 ---
 ##2017-01-24
-####Deploy web application enviroment with Gradle and Idea
+####Deploy web application environment with Gradle and Idea
 
 1. Follow instructions (https://my.oschina.net/u/1010578/blog/390094)
 
 2. Set artifact (http://blog.csdn.net/petershusheng/article/details/52382216)
 
 3. Add jsp-api.jar and servlet-api.jar
+
+---
+##2017-02-08
+####Read [A Neural Network for Factoid Question Answering over Paragraphs](https://cs.umd.edu/~miyyer/pubs/2014_qb_rnn.pdf)
+####Read [Multi-Perspective Context Matching for Machine Comprehension](https://arxiv.org/pdf/1612.04211.pdf)
+####Read [Question Answering](https://web.stanford.edu/~jurafsky/slp3/28.pdf)
+#####IR-based question answering
+#####knowledge-based question answering
+Why QA?
+What kind of questions should be answered by a  domain specific QA system?
+
+---
+##2017-02-09
+####Read [A Rule-based Question Answering System for Reading Comprehension Tests](https://www.cs.utah.edu/~riloff/pdfs/quarc.pdf)
+####Read[Stanford QA slides](https://www.fosteropenscience.eu/sites/default/files/pdf/2930.pdf)
+####Read[Stanford chatbot slides](https://web.stanford.edu/class/cs124/lec/chatbot.pdf)
+---
+##2017-02-10
+####Read [StalemateBreaker: A Proactive Content-Introducing Approach to Automatic Human-Computer Conversation](https://arxiv.org/pdf/1604.04358.pdf)
+
+####Read [Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models](https://arxiv.org/pdf/1604.04358.pdf)
+
+ 
