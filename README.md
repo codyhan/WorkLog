@@ -466,6 +466,7 @@ sudo make install
 
 3. in vm option, write: -Djava.library.path=/your_opencv_path/release/lib
 
+4. add "System.loadLibrary(Core.NATIVE_LIBRARY_NAME);" in java file
 ##2017-01-22
 ####Install CUDA-8.0 on ubuntu14.04 with kernel:4.2.0-27-generic
 ```
@@ -539,4 +540,41 @@ What kind of questions should be answered by a  domain specific QA system?
 
 ####Read [Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models](https://arxiv.org/pdf/1507.04808.pdf)
 
- 
+##2017-02-13
+####Install ffmpeg
+```
+sudo add-apt-repository ppa:kirillshkrogalev/ffmpeg-next
+sudo apt-get update
+sudo apt-get install ffmpeg
+``` 
+
+##2017-02-20
+####Read [Bilateral Multi-Perspective Matching for Natural Language Sentences](https://arxiv.org/pdf/1702.03814.pdf)
+
+##2017-02-23
+####Read [Paraphrase Pattern Acquisition by Diversifiable Bootstrapping](http://www.lti.cs.cmu.edu/sites/default/files/research/thesis/2015/hideki_shima_paraphrase_pattern_acquisition_by_diversifiable_bootstrapping.pdf)
+
+##2017-02-24
+####Hypothesis
+1. Distributional Hypothesis: Words that occur in similar contexts tend to have similar meanings
+2. Extended Distributional Hypothesis: Patterns that co-occur with similar pairs tend to have similar meanings.
+3. Latent  Relation  Hypothesis: Pairs  of  words  that  co-occur in similar patterns tend to have similar semantic relations.
+4. a multi-instance learning assumption (Dietterich et al., 1997) that two sentences under the same topic (we highlight topics in bold) are paraphrases if they contain at least one word pair.
+
+####Read [Modeling Sentences in the Latent Space](http://www.aclweb.org/anthology/P12-1091v2)
+
+##2017-02-27
+####Read [Baidu lecture on Paraphrasing](http://www.aclweb.org/anthology/C10-4001)
+
+
+##2017-02-28
+Met a problem when creating a project by scrapy. 
+```
+AttributeError: 'module' object has no attribute 'OP_NO_TLSv1_1'
+```
+[Solution:](https://stackoverflow.com/questions/28987891/patch-pyopenssl-for-sslv3-issue/29081240)
+```
+sudo easy_install --upgrade pip
+sudo pip uninstall pyopenssl
+sudo pip install pyopenssl
+```
