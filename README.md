@@ -572,9 +572,16 @@ Met a problem when creating a project by scrapy.
 ```
 AttributeError: 'module' object has no attribute 'OP_NO_TLSv1_1'
 ```
-[Solution:](https://stackoverflow.com/questions/28987891/patch-pyopenssl-for-sslv3-issue/29081240)
+Solution:
 ```
-sudo easy_install --upgrade pip
-sudo pip uninstall pyopenssl
-sudo pip install pyopenssl
+sudo pip install openssl
+sudo pip install --upgrade pyOpenSSl
+
+##2017-03-08
+copy random N files to a directory
 ```
+ls | shuf -n 11 | xargs cp -t /home/han/Desktop/
+```
+
+##2017-03-24
+####[Read] [Incorporating Copying Mechanism in Sequence-to-Sequence Learning](http://cn.arxiv.org/pdf/1603.06393v2.pdf)
