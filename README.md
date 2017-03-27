@@ -577,12 +577,12 @@ Solution:
 sudo pip install openssl
 sudo pip install --upgrade pyOpenSSl
 
-##2017-03-08
+## 2017-03-08
 copy random N files to a directory
 ```
 ls | shuf -n 11 | xargs cp -t /home/han/Desktop/
 ```
 
-##2017-03-24
+## 2017-03-24
 
-####Read [Incorporating Copying Mechanism in Sequence-to-Sequence Learning](http://cn.arxiv.org/pdf/1603.06393v2.pdf)
+#### Read [Incorporating Copying Mechanism in Sequence-to-Sequence Learning](http://cn.arxiv.org/pdf/1603.06393v2.pdf)
