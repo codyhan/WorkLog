@@ -40,7 +40,8 @@ else
    solved by not install opengl
 
 ---
-##2016-11-16
+
+## 2016-11-16
 #### Continue read torch tutorial
 
 (https://github.com/soumith/cvpr2015/blob/master/NNGraph%20Tutorial.ipynb)
@@ -103,6 +104,7 @@ return LSTM
 1.description:this task uses news text to produce train data. The source sentences are cleaned sentences from news documents and the target sentences are the next sentence after the source sentence.
 
 2.delete sentences of length <5 or >25
+
 #### Install python hdf5
 ```
 sudo pip install cython
@@ -110,11 +112,14 @@ sudo apt-get install libhdf5-dev
 sudo pip install h5py
 ```
 ---
-##2016-11-17
-####Install torch on Telsa server
+
+## 2016-11-17
+
+#### Install torch on Telsa server
 
 follow instructions on torch.ch
-####Learn torch
+
+#### Learn torch
 
 (https://github.com/torch/nn/blob/master/doc/table.md)
 
@@ -130,13 +135,16 @@ follow instructions on torch.ch
 (http://hunch.net/~nyoml/torch7.pdf)
 
 ---
-##2016-11-21
+
+## 2016-11-21
+
 #### write lab report
 
 #### conduct experiments to tune parameters.
 ---
 
-##2016-11-22
+## 2016-11-22
+
 (http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/)
 
 #### installed my new desktop however failed 
@@ -144,7 +152,8 @@ follow instructions on torch.ch
    after diable nouveau driver and reboot the system, cannot enter into text mode.
 
 ---
-##2016-11-23
+
+## 2016-11-23
 #### Neural Turing Machines:https://arxiv.org/pdf/1410.5401v2.pdf
 
 #### 多层lstm前向传播顺序:先纵后横
@@ -153,8 +162,9 @@ follow instructions on torch.ch
 
 #### understand multi-attn
 ---
-##2016-11-24
-####Word error rate
+
+## 2016-11-24
+#### Word error rate
 
 minimum number of editing steps to transform output to reference.
 
@@ -173,8 +183,10 @@ minimum number of editing steps to transform output to reference.
    (http://www.statmt.org/book/slides/08-evaluation.pdf)
 
 ---
-##2016-11-28
-####Strategies for paraphrasing:
+
+## 2016-11-28
+
+#### Strategies for paraphrasing:
 (https://arxiv.org/pdf/cs/0112005v1.pdf)
 
 1.Synonyms:
@@ -214,30 +226,36 @@ minimum number of editing steps to transform output to reference.
    Paraphrase: A manager often succeeds because of perseverance. Managers’ success is often because they persevere.
 
 
+---
+## 2016-12-01
 
-##2016-12-01
 #### read train.lua
 
    when attn=0 use the hidden state of the last rnn unit as the context vector.
+---
+## 2016-12-02
 
-##2016-12-02
 #### read Semantic Parsing via Paraphrasing
 
-##2016-12-12
+## 2016-12-12
 
 #### read [Tagger: Deep Unsupervised Perceptual Grouping](https://arxiv.org/pdf/1606.06724v2.pdf)
 
 #### read [GAN tutorial](http://www.jiqizhixin.com/article/1969)
 ---
-##2016-12-13
+
+## 2016-12-13
+
 #### read [Generating Sentences From a Continuous Space](https://arxiv.org/pdf/1511.06349v2.pdf)
 
 #### read [Reasoning With Neural Tensor Networks for Knowledge Base Completion](https://papers.nips.cc/paper/5028-reasoning-with-neural-tensor-networks-for-knowledge-base-completion.pdf#cite.Graupmann)
 
 #### read [A Neural Conversational Model](https://arxiv.org/pdf/1506.05869v3.pdf)
 ---
-##2016-12-14
-####Seven possible relations between phrases/sentences.
+
+## 2016-12-14
+
+#### Seven possible relations between phrases/sentences.
 
 (http://web.stanford.edu/class/cs224u/materials/cs224u-2016-bowman.pdf) slide:23
 
@@ -255,7 +273,7 @@ minimum number of editing steps to transform output to reference.
 
 7. independence
 
-####Readings
+#### Readings
 
 #### read [Generating Natural Language Inference Chains](https://arxiv.org/pdf/1606.01404v1.pdf)
 
@@ -264,8 +282,10 @@ minimum number of editing steps to transform output to reference.
 #### read [A Roadmap towards Machine Intelligence](https://arxiv.org/abs/1511.08130)
 
 #### read [SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient](https://arxiv.org/pdf/1609.05473v5.pdf)
+
 ---
-##2016-12-16
+## 2016-12-16
+
 #### read [Data Generation as Sequential Decision Making](https://arxiv.org/pdf/1506.03504v3.pdf)
 
 #### read [Generating Chinese Classical Poems with RNN](https://arxiv.org/pdf/1604.01537.pdf)
@@ -277,13 +297,17 @@ minimum number of editing steps to transform output to reference.
 #### read [Learning Distributed Word Representations for Natural Logic Reasoning](http://www.aaai.org/ocs/index.php/SSS/SSS15/paper/view/10221/10027)
 
 ---
-##2016-12-20
+
+## 2016-12-20
+
 #### read [A Neural Attention Model for Abstractive Summarization](https://arxiv.org/pdf/1509.00685v2.pdf)
 
 #### read [Monolingual Machine Translation for Paraphrase Generation](https://www.microsoft.com/en-us/research/publication/monolingual-machine-translation-for-paraphrase-generation/)
 
 ---
-##2016-12-22
+
+## 2016-12-22
+
 #### read [DIRT – Discovery of Inference Rules from Text](https://pdfs.semanticscholar.org/511c/439c59f9bbfeb3be135d85ee75bef5594ad2.pdf)
 
 Ideas: words that tend to occur in the same contexts tend  to  have  similar  meanings.
@@ -293,7 +317,9 @@ Ideas: words that tend to occur in the same contexts tend  to  have  similar  me
 Ideas: each filter of the CharCNN is essentially learning to detect particular character n-grams.
 
 ---
-##2016-12-23
+
+## 2016-12-23
+
 #### read [Dual Learning for Machine Translation](https://arxiv.org/pdf/1611.00179.pdf)
 
 #### read [中文信息处理发展报告](http://cips-upload.bj.bcebos.com/cips2016.pdf)
@@ -301,13 +327,17 @@ Ideas: each filter of the CharCNN is essentially learning to detect particular c
 #### read [Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks](http://www.cs.toronto.edu/%7Egraves/icml_2006.pdf)
 
 ---
-##2016-12-26
+
+## 2016-12-26
+
 ####繁简转换
 
 opencc -i wiki.zh.text -o wiki.zh.text.jian -c zht2zhs.ini
 
 ---
-##2016-12-27
+
+## 2016-12-27
+
 #### read [Phased LSTM: Accelerating Recurrent Network Training for Long or Event-based Sequences](https://arxiv.org/pdf/1610.09513v1.pdf)
 
 #### read [Chinese sentence segmentation as comma classification](http://www.aclweb.org/anthology/P11-2111)
@@ -315,13 +345,17 @@ opencc -i wiki.zh.text -o wiki.zh.text.jian -c zht2zhs.ini
 The punctuation comma in Chinese sometimes functions as a period causing the diffuculty of segmenting sentences in a paragraph.
 
 ---
-##2016-12-30
+
+## 2016-12-30
+
 #### read [Data Programming:Creating Large Training Sets, Quickly](https://arxiv.org/pdf/1605.07723v2.pdf)
 
 #### read [Sentence Boundary Detection for Social Media Text](http://amitavadas.com/Pub/SBD_ICON_2015.pdf)
 
 ---
-##2016-01-02
+
+## 2016-01-02
+
 #### read [text segmentation](https://en.wikipedia.org/wiki/Text_segmentation)
 
 #### read [Elephant:Sequence Labelling for Word and Sentence Segmentation](http://www.aclweb.org/anthology/D13-1146)
@@ -354,34 +388,38 @@ echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 ```
 
 ---
-##2017-01-05
+
+## 2017-01-05
 
 #### read [Semantic Parsing: The Task, the State-of-the-Art and the Future](http://www.aclweb.org/anthology/P10-5006)
 
 #### read [Unsupervised Semantic Parsing](http://research.microsoft.com/en-us/um/people/hoifung/papers/poon09.pdf)
 
 ---
-##2017-01-06
+
+## 2017-01-06
 
 #### read [The Ubuntu Dialogue Corpus: A Large Dataset for Research in Unstructured Multi-Turn Dialogue Systems](https://arxiv.org/pdf/1506.08909v3.pdf)
 
 Retrieve-based chatbot. Use dual encoders to predict whether a context and a response is a match.
 
 ---
-##2017-01-09
+
+## 2017-01-09
 
 #### read [Show and Tell](https://arxiv.org/pdf/1609.06647v1.pdf)
 
 #### read [Deep Visual-Semantic Alignments for Generating Image Descriptions](http://cs.stanford.edu/people/karpathy/cvpr2015.pdf)
 
 ---
-##2017-01-10
+
+## 2017-01-10
 
 #### find a repo which is able to convert pdf into html (https://github.com/coolwanglu/pdf2htmlEX)
 
 magic installation:(https://gist.github.com/rajeevkannav/d07f822e209a22d07176)
 
-####Install Docker
+#### Install Docker
 
 (https://docs.docker.com/engine/installation/linux/ubuntulinux/)
 
@@ -401,8 +439,10 @@ sudo docker run hello-world
 ```
 
 ---
-##2017-01-13
-####install tomcat
+
+## 2017-01-13
+#### install tomcat
+
 ```
 tar -zxvf apache-tomcat-7.0.73.tar.gz
 sudo mv apache-tomcat-7.0.73 /opt/
@@ -430,8 +470,10 @@ sudo ./shutdown.sh
 ```
 
 ---
-##2017-01-16
-####install opencv2.4.11 for nvidia gtx series card with cuda 8.0
+
+## 2017-01-16
+
+#### install opencv2.4.11 for nvidia gtx series card with cuda 8.0
 Useful blog(http://blog.csdn.net/xuzhongxiong/article/details/52717285)
 ```
 sudo apt-get install build-essential  
@@ -460,8 +502,10 @@ sudo make install
 ```
 
 ---
-##2017-01-17
-####Configure opencv library path in IDEA:
+
+## 2017-01-17
+
+#### Configure opencv library path in IDEA:
 1. open "file/project structure/dependencies", add opencv jar.
 
 2. open "file/project structure/libraries/+/java", add opencv jar.
@@ -469,8 +513,10 @@ sudo make install
 3. in vm option, write: -Djava.library.path=/your_opencv_path/release/lib
 
 4. add "System.loadLibrary(Core.NATIVE_LIBRARY_NAME);" in java file
-##2017-01-22
-####Install CUDA-8.0 on ubuntu14.04 with kernel:4.2.0-27-generic
+
+## 2017-01-22
+
+#### Install CUDA-8.0 on ubuntu14.04 with kernel:4.2.0-27-generic
 ```
 sudo apt-get update
 sudo apt-get install nvidia-367
@@ -490,30 +536,36 @@ source /etc/profile
 uname -r
 nvcc -V
 ```
+---
 
-##2017-01-23
-####Install cuDNN5.1
+## 2017-01-23
+
+#### Install cuDNN5.1
 ```
 tar xvzf cudnn-8.0-linux-x64-v5.1-ga.tgz
 sudo cp -P cuda/include/cudnn.h /usr/local/cuda-8.0/include
 sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-8.0/lib64
 sudo chmod a+r /usr/local/cuda-8.0/include/cudnn.h /usr/local/cuda-8.0/lib64/libcudnn*
 ```
-####Install tensorflow with gpu support for python 2.7
+
+#### Install tensorflow with gpu support for python 2.7
 ```
 sudo apt-get install python-pip python-dev
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp27-none-linux_x86_64.whl
 sudo pip install --upgrade $TF_BINARY_URL
 ```
-####Configure Shiny Server
+
+#### Configure Shiny Server
 ```
 sudo gedit /etc/shiny-server/shiny-server.conf
 change "run_as shiny" to "run_as username"
 sudo ufw allow 3838/tcp
 ```
 ---
-##2017-01-24
-####Deploy web application environment with Gradle and Idea
+
+## 2017-01-24
+
+#### Deploy web application environment with Gradle and Idea
 
 1. Follow instructions (https://my.oschina.net/u/1010578/blog/390094)
 
@@ -522,54 +574,72 @@ sudo ufw allow 3838/tcp
 3. Add jsp-api.jar and servlet-api.jar
 
 ---
-##2017-02-08
-####Read [A Neural Network for Factoid Question Answering over Paragraphs](https://cs.umd.edu/~miyyer/pubs/2014_qb_rnn.pdf)
-####Read [Multi-Perspective Context Matching for Machine Comprehension](https://arxiv.org/pdf/1612.04211.pdf)
-####Read [Question Answering](https://web.stanford.edu/~jurafsky/slp3/28.pdf)
-#####IR-based question answering
-#####knowledge-based question answering
+
+## 2017-02-08
+
+#### Read [A Neural Network for Factoid Question Answering over Paragraphs](https://cs.umd.edu/~miyyer/pubs/2014_qb_rnn.pdf)
+
+#### Read [Multi-Perspective Context Matching for Machine Comprehension](https://arxiv.org/pdf/1612.04211.pdf)
+
+#### Read [Question Answering](https://web.stanford.edu/~jurafsky/slp3/28.pdf)
+
+##### IR-based question answering
+
+##### knowledge-based question answering
 Why QA?
 What kind of questions should be answered by a  domain specific QA system?
 
 ---
-##2017-02-09
-####Read [A Rule-based Question Answering System for Reading Comprehension Tests](https://www.cs.utah.edu/~riloff/pdfs/quarc.pdf)
-####Read [Stanford QA slides](https://www.fosteropenscience.eu/sites/default/files/pdf/2930.pdf)
-####Read [Stanford chatbot slides](https://web.stanford.edu/class/cs124/lec/chatbot.pdf)
+
+## 2017-02-09
+
+#### Read [A Rule-based Question Answering System for Reading Comprehension Tests](https://www.cs.utah.edu/~riloff/pdfs/quarc.pdf)
+
+#### Read [Stanford QA slides](https://www.fosteropenscience.eu/sites/default/files/pdf/2930.pdf)
+
+#### Read [Stanford chatbot slides](https://web.stanford.edu/class/cs124/lec/chatbot.pdf)
 ---
-##2017-02-10
-####Read [StalemateBreaker: A Proactive Content-Introducing Approach to Automatic Human-Computer Conversation](https://arxiv.org/pdf/1604.04358.pdf)
 
-####Read [Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models](https://arxiv.org/pdf/1507.04808.pdf)
+## 2017-02-10
 
-##2017-02-13
-####Install ffmpeg
+#### Read [StalemateBreaker: A Proactive Content-Introducing Approach to Automatic Human-Computer Conversation](https://arxiv.org/pdf/1604.04358.pdf)
+
+#### Read [Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models](https://arxiv.org/pdf/1507.04808.pdf)
+
+## 2017-02-13
+
+#### Install ffmpeg
 ```
 sudo add-apt-repository ppa:kirillshkrogalev/ffmpeg-next
 sudo apt-get update
 sudo apt-get install ffmpeg
 ``` 
 
-##2017-02-20
-####Read [Bilateral Multi-Perspective Matching for Natural Language Sentences](https://arxiv.org/pdf/1702.03814.pdf)
+## 2017-02-20
 
-##2017-02-23
-####Read [Paraphrase Pattern Acquisition by Diversifiable Bootstrapping](http://www.lti.cs.cmu.edu/sites/default/files/research/thesis/2015/hideki_shima_paraphrase_pattern_acquisition_by_diversifiable_bootstrapping.pdf)
+#### Read [Bilateral Multi-Perspective Matching for Natural Language Sentences](https://arxiv.org/pdf/1702.03814.pdf)
 
-##2017-02-24
-####Hypothesis
+## 2017-02-23
+
+#### Read [Paraphrase Pattern Acquisition by Diversifiable Bootstrapping](http://www.lti.cs.cmu.edu/sites/default/files/research/thesis/2015/hideki_shima_paraphrase_pattern_acquisition_by_diversifiable_bootstrapping.pdf)
+
+## 2017-02-24
+
+#### Hypothesis
+
 1. Distributional Hypothesis: Words that occur in similar contexts tend to have similar meanings
 2. Extended Distributional Hypothesis: Patterns that co-occur with similar pairs tend to have similar meanings.
 3. Latent  Relation  Hypothesis: Pairs  of  words  that  co-occur in similar patterns tend to have similar semantic relations.
 4. a multi-instance learning assumption (Dietterich et al., 1997) that two sentences under the same topic (we highlight topics in bold) are paraphrases if they contain at least one word pair.
 
-####Read [Modeling Sentences in the Latent Space](http://www.aclweb.org/anthology/P12-1091v2)
+#### Read [Modeling Sentences in the Latent Space](http://www.aclweb.org/anthology/P12-1091v2)
 
-##2017-02-27
-####Read [Baidu lecture on Paraphrasing](http://www.aclweb.org/anthology/C10-4001)
+## 2017-02-27
+
+#### Read [Baidu lecture on Paraphrasing](http://www.aclweb.org/anthology/C10-4001)
 
 
-##2017-02-28
+## 2017-02-28
 Met a problem when creating a project by scrapy. 
 ```
 AttributeError: 'module' object has no attribute 'OP_NO_TLSv1_1'
@@ -586,8 +656,10 @@ copy random N files to a directory
 ls | shuf -n 11 | xargs cp -t /home/han/Desktop/
 ```
 
-##2017-03-24
-####Read [Incorporating Copying Mechanism in Sequence-to-Sequence Learning](http://cn.arxiv.org/pdf/1603.06393v2.pdf)
+## 2017-03-24
 
-##2017-03-27
+#### Read [Incorporating Copying Mechanism in Sequence-to-Sequence Learning](http://cn.arxiv.org/pdf/1603.06393v2.pdf)
+
+## 2017-03-27
+
 ####Read[TextRank:Bringing Order into Texts](https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf)
