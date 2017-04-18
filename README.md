@@ -230,9 +230,9 @@ minimum number of editing steps to transform output to reference.
 ## 2016-12-01
 
 #### read train.lua
-
-   when attn=0 use the hidden state of the last rnn unit as the context vector.
+when attn=0 use the hidden state of the last rnn unit as the context vector.
 ---
+
 ## 2016-12-02
 
 #### read Semantic Parsing via Paraphrasing
@@ -649,17 +649,57 @@ Solution:
 sudo pip install openssl
 sudo pip install --upgrade pyOpenSSl
 ```
-
+---
 ## 2017-03-08
 copy random N files to a directory
 ```
 ls | shuf -n 11 | xargs cp -t /home/han/Desktop/
 ```
-
+---
 ## 2017-03-24
 
 #### Read [Incorporating Copying Mechanism in Sequence-to-Sequence Learning](http://cn.arxiv.org/pdf/1603.06393v2.pdf)
-
+---
 ## 2017-03-27
 
-####Read[TextRank:Bringing Order into Texts](https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf)
+#### Read [TextRank:Bringing Order into Texts](https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf)
+---
+## 2017-03-28
+
+#### Read [You Only Look Once:Unified, Real-Time Object Detection](https://arxiv.org/pdf/1506.02640.pdf)
+
+
+"Sum-squared error also equally weights errors in large boxes and small boxes. Our error metric should reflect that small  deviations  in  large  boxes  matter  less  than  in  small boxes.  To partially address this we predict the square root of the bounding box width and height instead of the width and height directly."
+
+#### Read [Learning Mixtures of Submodular Shells with Application to Document Summarization](https://arxiv.org/pdf/1210.4871.pdf)
+
+#### Read [A Class of Submodular Functions for Document Summarization](http://www.aclweb.org/anthology/P11-1052)
+
+---
+## 2017-03-29
+```
+#rename all files in a directory
+n=1
+for f in `ls ./`;do mv $f $n.jpg; echo $n; n=$[$n+1]; done
+```
+
+---
+## 2017-03-30
+```
+mydir = check
+mkdir $mydir
+cat result.txt | awk -F " " '{if($2<="0.5") print $0}' > prob_less_50.list
+n=1;for f in `cat prob_less_50.list`;do cp $f ./$mydir/$n.jpg; echo $n; n=$[$n+1]; done
+ls ./mydir > rest.txt
+python sel.py prob_less_50.list rest.txt todel.txt
+cat todel.txt norpl.txt > negd.txt
+python del.py poss2.txt todel.txt poss3.txt
+python del.py xg1.txt todel.txt xg2.txt 
+```
+
+---
+## 2017-04-13
+
+#### Read[Mask R-CNN](https://arxiv.org/pdf/1703.06870.pdf)
+
+#### Read[Global Contrast based Salient Region Detection](http://vecg.cs.ucl.ac.uk/Projects/SmartGeometry/contrast_saliency/paper_docs/contrast_saliency_small_cvpr11.pdf)
