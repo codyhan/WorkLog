@@ -700,27 +700,27 @@ python del.py xg1.txt todel.txt xg2.txt
 ---
 ## 2017-04-13
 
-#### Read[Mask R-CNN](https://arxiv.org/pdf/1703.06870.pdf)
+#### Read [Mask R-CNN](https://arxiv.org/pdf/1703.06870.pdf)
 
-#### Read[Global Contrast based Salient Region Detection](http://vecg.cs.ucl.ac.uk/Projects/SmartGeometry/contrast_saliency/paper_docs/contrast_saliency_small_cvpr11.pdf)
+#### Read [Global Contrast based Salient Region Detection](http://vecg.cs.ucl.ac.uk/Projects/SmartGeometry/contrast_saliency/paper_docs/contrast_saliency_small_cvpr11.pdf)
 
 ## 2017-04-19
 
-#### Read[TextTiling:Segmenting Text into Multi-paragraph Subtopic Passages](http://anthology.aclweb.org/J/J97/J97-1003.pdf)
+#### Read [TextTiling:Segmenting Text into Multi-paragraph Subtopic Passages](http://anthology.aclweb.org/J/J97/J97-1003.pdf)
 
 ## 2017-04-24
-#### Read[Neural Paraphrase Generation with Stacked Residual LSTM Networks](https://arxiv.org/pdf/1610.03098.pdf)
+#### Read [Neural Paraphrase Generation with Stacked Residual LSTM Networks](https://arxiv.org/pdf/1610.03098.pdf)
 
 ## 2017-04-27
-#### Read[When Are Tree Structures Necessary for Deep Learning of Representations](https://nlp.stanford.edu/pubs/emnlp2015_2_jiwei.pdf)
+#### Read [When Are Tree Structures Necessary for Deep Learning of Representations](https://nlp.stanford.edu/pubs/emnlp2015_2_jiwei.pdf)
 
-#### Read[Neural Machine Translation and Sequence-to-sequence Models:A Tutorial](https://arxiv.org/pdf/1703.01619.pdf)
+#### Read [Neural Machine Translation and Sequence-to-sequence Models:A Tutorial](https://arxiv.org/pdf/1703.01619.pdf)
 
 ## 2017-05-08
-#### Read[Generating Sentences from a Continuous Space](https://arxiv.org/pdf/1511.06349.pdf)
+#### Read [Generating Sentences from a Continuous Space](https://arxiv.org/pdf/1511.06349.pdf)
 
 ## 2017-05-10
-#### Read[Convolutional Sequence to Sequence Learning](https://arxiv.org/pdf/1705.03122.pdf#cite.wu2016google)
+#### Read [Convolutional Sequence to Sequence Learning](https://arxiv.org/pdf/1705.03122.pdf#cite.wu2016google)
 
-#### Read[A Convolutional Encoder for Neural Machine Translation](https://arxiv.org/pdf/1611.02344.pdf)
+#### Read [A Convolutional Encoder for Neural Machine Translation](https://arxiv.org/pdf/1611.02344.pdf)
 
