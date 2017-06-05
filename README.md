@@ -724,3 +724,41 @@ python del.py xg1.txt todel.txt xg2.txt
 
 #### Read [A Convolutional Encoder for Neural Machine Translation](https://arxiv.org/pdf/1611.02344.pdf)
 
+## 2017-05-15
+check disk space
+```
+df -h
+```
+
+## 2017-05-23
+use Kaldi
+```
+#install Kaldi
+git clone https://github.com/suzhoushr/kaldi-shr.git
+cd kaldi-shr/
+chmod +x -R extras/
+chmod +x configure
+cd ./tools
+#tar -xvzj openfst-1.3.4.tar.gz
+./extras/check_dependencies.sh
+#sudo apt-get install  subversion
+sudo ln -s -f bash /bin/sh
+make -j4
+cd ../src
+./configure
+make -j4
+#cd ../nnetbin/
+#make -j4
+#preprocess data
+./shr_scripts/chw/utils/img2condata.py train.list "train" | copy-feats ark:- ark,scp:./data/data.tr.ark,./data/data.tr.scp
+./shr_scripts/chw/utils/img2condata.py val.list "test" | copy-feats ark:- ark,scp:./data/data.cv.ark,./data/data.cv.scp
+```
+
+
+## 2017-06-05
+
+#### Read [A fast learning algorithm for deep belief nets](https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf)
+
+#### Read [Greedy Layer-Wise Training of Deep Networks](http://www.iro.umontreal.ca/~lisa/pointeurs/BengioNips2006All.pdf)
+
+#### Read [Efficient Learning of Sparse Representations with an Energy-Based Model](http://machinelearning.wustl.edu/mlpapers/paper_files/NIPS2006_804.pdf)
