@@ -768,8 +768,8 @@ make -j4
 deploy war package in tomcat. encountered a problem "java.lang.UnsatisfiedLinkError: no segmentor_jni in java.library.path"
 
 solved by 
-"""
+```
 sudo gedit /opt/apache-tomcat-7.0.78/bin/catalina.sh
 \#write
 JAVA_OPTS=" -Djava.library.path=/home/han/Software/ltp4j/libs"
-"""
+```
