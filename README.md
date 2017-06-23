@@ -762,3 +762,14 @@ make -j4
 #### Read [Greedy Layer-Wise Training of Deep Networks](http://www.iro.umontreal.ca/~lisa/pointeurs/BengioNips2006All.pdf)
 
 #### Read [Efficient Learning of Sparse Representations with an Energy-Based Model](http://machinelearning.wustl.edu/mlpapers/paper_files/NIPS2006_804.pdf)
+
+## 2017-06-23
+
+deploy war package in tomcat. encountered a problem "java.lang.UnsatisfiedLinkError: no segmentor_jni in java.library.path"
+
+solved by 
+"""
+sudo gedit /opt/apache-tomcat-7.0.78/bin/catalina.sh
+\#write
+JAVA_OPTS=" -Djava.library.path=/home/han/Software/ltp4j/libs"
+"""
