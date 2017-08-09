@@ -773,3 +773,25 @@ sudo gedit /opt/apache-tomcat-7.0.78/bin/catalina.sh
 \#write
 JAVA_OPTS=" -Djava.library.path=/home/han/Software/ltp4j/libs"
 ```
+
+compile ltp4j on centos
+```
+cmake -DLTP_HOME=`pwd`/ltp/ .
+make
+```
+
+## 2017-07-11
+
+#### Read[Recursive Recurrent Nets with Attention Modeling for OCR in the Wild](https://arxiv.org/pdf/1603.03101v1.pdf)
+
+
+## 2017-08-03
+
+compile java from shell
+
+```
+javac -classpath /path/to/jar test.java
+java -Djava.ext.dirs=/path/to/jar/ test
+```
+
+
