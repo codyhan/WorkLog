@@ -795,3 +795,29 @@ java -Djava.ext.dirs=/path/to/jar/ test
 ```
 
 
+## 2017-08-15
+
+train a language model using irsltm
+```
+/disk03/czj_workspace/irstlm/build/bin/build-lm.sh -i data_ltp.txt -n 4 -f 3,3,2,2 -k 10 -v -o train.irstlm.gz
+```
+
+## 2017-08-16
+
+```
+\#check tomcat process id 
+
+ps -ef | grep tomcat
+
+\#check tomcat log
+
+tail -100f ./logs/catalina.out
+```
+
+## 2017-08-17
+
+zip and upload file at the same time
+```
+rsync -z -P data_ltp.txt -e "ssh -p 59522" root@###.###.##.###:/data/czj_workspace
+```
+
