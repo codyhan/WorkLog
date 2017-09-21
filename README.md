@@ -821,3 +821,8 @@ zip and upload file at the same time
 rsync -z -P data_ltp.txt -e "ssh -p 59522" root@###.###.##.###:/data/czj_workspace
 ```
 
+```
+cat data_sentence.txt | sed 's/[ ]*[,，][ ]*/，\n/g' | awk '{if(length($0)>5) print}' | grep -E "大有.*之势" | less
+```
+
+#### Read[Lexicon-Free Conversational Speech Recognition with Neural Networks](http://deeplearning.stanford.edu/lexfree/lexfree.pdf)
