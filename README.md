@@ -826,3 +826,125 @@ cat data_sentence.txt | sed 's/[ ]*[,，][ ]*/，\n/g' | awk '{if(length($0)>5) 
 ```
 
 #### Read[Lexicon-Free Conversational Speech Recognition with Neural Networks](http://deeplearning.stanford.edu/lexfree/lexfree.pdf)
+
+
+
+### 2017-11-03
+
+#### Read[A systematic study of the class imbalance problem in convolutional neural networks](https://arxiv.org/pdf/1710.05381.pdf)
+
+Methods for addressing data imbalance
+
+### 2017-11-06
+
+#### Read[Don't Decay the Learning Rate, Increase the Batch Size](https://arxiv.org/pdf/1711.00489.pdf)
+
+
+
+### 2017-11-07
+
+read paper abstractions on NIPS 2016
+
+##### Scan Order in Gibbs Sampling: Models in Which it Matters and Bounds on How Much
+
+gibbs sampling, scan order, random scan, systematic scan.
+
+#####  Deep ADMM-Net for Compressive Sensing MRI
+
+ADMM-net, to reconstruct MRI data from a small number of under-sampled data
+
+#####  A scaled Bregman theorem with applications
+
+Bregman theorem
+
+#####  Swapout: Learning an ensemble of deep architectures
+
+swapout, a regularization method, combination of dropout and stochastic depth.
+
+#####  On Regularizing Rademacher Observation Losses
+
+introduced rado loss for classification problems
+
+#####  Without-Replacement Sampling for Stochastic Gradient Methods
+
+as the name of the paper suggests.
+
+#####  Fast and Provably Good Seedings for k-Means
+
+provide fast and competitive seedings for k-Means clustering without prior assumptions on the data
+
+#####  Unsupervised Learning for Physical Interaction through Video Prediction
+
+learn about physical object motion without labels
+
+#####  High-Rank Matrix Completion and Clustering under Self-Expressive Models
+
+#####  Learning a Probabilistic Latent Space of Object Shapes via 3D Generative-Adversarial Modeling
+
+generate 3D objects 
+
+#####  Visual Dynamics: Probabilistic Future Frame Synthesis via Cross Convolutional Networks
+
+use a single input frame to generate future frames.
+
+#####  Human Decision-Making under Limited Time
+
+Human decision-making practically is not optimal under constraints such as time.
+
+#####  Incremental Boosting Convolutional Neural Network for Facial Action Unit Recognition
+
+Boosting CNN for facial action recognition.
+
+#####  Natural-Parameter Networks: A Class of Probabilistic Neural Networks
+
+a bayesian treatment for NN, to alleviate the problem of insufficient data.
+
+#####  Tree-Structured Reinforcement Learning for Sequential Object Localization
+
+existing object detection algorithms ignore interdependency among different objects and deviate from the human perception procedure
+
+#####  Unsupervised Domain Adaptation with Residual Transfer Networks
+
+transfer learning
+
+#####  Verification Based Solution for Structured MAB Problems
+
+mutli-armed bandit?
+
+#####  Minimizing Regret on Reflexive Banach Spaces and Nash Equilibria in Continuous Zero-Sum Games
+
+#####  Linear dynamical neural population models through nonlinear embeddings
+
+##### SURGE: Surface Regularized Geometry Estimation from a Single Image
+
+predict pixel depth in a image.
+
+#####  Interpretable Distribution Features with Maximum Testing Power
+
+distinguish distributions
+
+#####  Sorting out typicality with the inverse moment matrix SOS polynomial
+
+#####  Multi-armed Bandits: Competing with Optimal Sequences
+
+#####  Multivariate tests of association based on univariate tests
+
+Test the independence of two random vectors, convert multivariate test to univariate test by imposing a distance measure.
+
+#####  Learning What and Where to Draw
+
+Sythesize images using GAN given what and where to draw.
+
+#####  The Sound of APALM Clapping: Faster Nonsmooth Nonconvex Optimization with Stochastic Asynchronous PALM
+
+a block coordinate stochastic proximal-gradient method for solving nonconvex, nonsmooth optimization problems
+
+##### Integrated perception with recurrent multi-task neural networks
+
+multi-task learning
+
+#####  Learning from Small Sample Sets by Combining Unsupervised Meta-Training with CNNs
+
+#####  CNNpack: Packing Convolutional Neural Networks in the Frequency Domain
+
+compressing CNN
